@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="共同学习，共同进步">
-<meta property="og:type" content="website">
-<meta property="og:title" content="技术分享">
-<meta property="og:url" content="https://github.com/jiang-biao/jiang-biao.github.io/index.html">
+<meta name="description" content="自己有两个github账户，用途不同，但是需要在同一台机器上使用。查了不少资料，整理如下。 一、需求情况：自己有两个github账号，准备一个工作用，一个生活用，两者互不干扰。 二、解决思路：管理两个SSH key。 三、具体方案：1.生成两个SSH key为了举例方便，这里使用“life”和“work”两个账户,下同。 12$ ssh-keygen -t rsa -C &quot;life@qq.com&quot;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="win7电脑上的git同时使用两个github账户">
+<meta property="og:url" content="https://github.com/jiang-biao/jiang-biao.github.io/2018/04/27/set-two-github-accounts-on-win7-ssh/index.html">
 <meta property="og:site_name" content="技术分享">
-<meta property="og:description" content="共同学习，共同进步">
+<meta property="og:description" content="自己有两个github账户，用途不同，但是需要在同一台机器上使用。查了不少资料，整理如下。 一、需求情况：自己有两个github账号，准备一个工作用，一个生活用，两者互不干扰。 二、解决思路：管理两个SSH key。 三、具体方案：1.生成两个SSH key为了举例方便，这里使用“life”和“work”两个账户,下同。 12$ ssh-keygen -t rsa -C &quot;life@qq.com&quot;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-27T07:32:14.651Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="技术分享">
-<meta name="twitter:description" content="共同学习，共同进步">
+<meta name="twitter:title" content="win7电脑上的git同时使用两个github账户">
+<meta name="twitter:description" content="自己有两个github账户，用途不同，但是需要在同一台机器上使用。查了不少资料，整理如下。 一、需求情况：自己有两个github账号，准备一个工作用，一个生活用，两者互不干扰。 二、解决思路：管理两个SSH key。 三、具体方案：1.生成两个SSH key为了举例方便，这里使用“life”和“work”两个账户,下同。 12$ ssh-keygen -t rsa -C &quot;life@qq.com&quot;">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/jiang-biao/jiang-biao.github.io/"/>
+  <link rel="canonical" href="https://github.com/jiang-biao/jiang-biao.github.io/2018/04/27/set-two-github-accounts-on-win7-ssh/"/>
 
 
 
 
 
-  <title>技术分享</title>
+  <title>win7电脑上的git同时使用两个github账户 | 技术分享</title>
   
 
 
@@ -153,8 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -267,9 +267,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -299,9 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/27/set-two-github-accounts-on-win7-ssh/" itemprop="url">win7电脑上的git同时使用两个github账户</a></h1>
+          <h1 class="post-title" itemprop="name headline">win7电脑上的git同时使用两个github账户</h1>
         
 
         <div class="post-meta">
@@ -351,9 +349,7 @@
       
 
       
-        
-          
-            <p>自己有两个github账户，用途不同，但是需要在同一台机器上使用。查了不少资料，整理如下。</p>
+        <p>自己有两个github账户，用途不同，但是需要在同一台机器上使用。查了不少资料，整理如下。</p>
 <h2 id="一、需求情况："><a href="#一、需求情况：" class="headerlink" title="一、需求情况："></a>一、需求情况：</h2><p>自己有两个github账号，准备一个工作用，一个生活用，两者互不干扰。</p>
 <h2 id="二、解决思路："><a href="#二、解决思路：" class="headerlink" title="二、解决思路："></a>二、解决思路：</h2><p>管理两个SSH key。</p>
 <h2 id="三、具体方案："><a href="#三、具体方案：" class="headerlink" title="三、具体方案："></a>三、具体方案：</h2><h3 id="1-生成两个SSH-key"><a href="#1-生成两个SSH-key" class="headerlink" title="1.生成两个SSH key"></a>1.生成两个SSH key</h3><p>为了举例方便，这里使用“life”和“work”两个账户,下同。</p>
@@ -384,8 +380,6 @@
 <p>如果失败就删除重新来过！<br>history记录：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">405  <span class="built_in">eval</span> $(ssh-agent -s)</span><br><span class="line">406  <span class="built_in">cd</span> ~/</span><br><span class="line">407  rm -r .ssh/</span><br><span class="line">408  mkdir .ssh</span><br><span class="line">409  chmod 700 .ssh/</span><br><span class="line">410  <span class="built_in">cd</span> .ssh/</span><br><span class="line">411  ssh-keygen -t rsa -C <span class="string">"1302641213@qq.com"</span></span><br><span class="line">412  ssh-keygen -t rsa -C <span class="string">"jiang-biao@qq.com"</span></span><br><span class="line">413  ssh-add -l</span><br><span class="line">414  ssh-add ~/.ssh/id_rsa_life</span><br><span class="line">415  ssh-add ~/.ssh/id_rsa_work</span><br><span class="line">416  ssh-add -l</span><br><span class="line">417  touch config</span><br><span class="line">419  ssh -vT git@github.com</span><br><span class="line">420  <span class="built_in">cd</span> /c/work/blog</span><br><span class="line">421  hexo d --debug</span><br><span class="line">422  <span class="built_in">history</span> 100</span><br></pre></td></tr></table></figure></p>
 <p>OK!<br>参考:<a href="https://www.cnblogs.com/xjnotxj/p/5845574.html" target="_blank" rel="noopener">电脑上的git同时使用两个github账户</a></p>
 
-          
-        
       
     </div>
     
@@ -402,12 +396,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -417,10 +411,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -428,6 +423,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -448,8 +447,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -491,6 +499,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、需求情况："><span class="nav-number">1.</span> <span class="nav-text">一、需求情况：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、解决思路："><span class="nav-number">2.</span> <span class="nav-text">二、解决思路：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、具体方案："><span class="nav-number">3.</span> <span class="nav-text">三、具体方案：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-生成两个SSH-key"><span class="nav-number">3.1.</span> <span class="nav-text">1.生成两个SSH key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-添加私钥"><span class="nav-number">3.2.</span> <span class="nav-text">2.添加私钥</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、打开ssh-agent"><span class="nav-number">3.2.1.</span> <span class="nav-text">1、打开ssh-agent</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、添加私钥"><span class="nav-number">3.2.2.</span> <span class="nav-text">2、添加私钥</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-创建config文件"><span class="nav-number">3.3.</span> <span class="nav-text">3.创建config文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-部署SSH-key"><span class="nav-number">3.4.</span> <span class="nav-text">4.部署SSH key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-远程测试"><span class="nav-number">3.5.</span> <span class="nav-text">5.远程测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-使用"><span class="nav-number">3.6.</span> <span class="nav-text">6.使用</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -631,6 +655,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
