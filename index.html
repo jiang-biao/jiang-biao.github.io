@@ -303,6 +303,201 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/jiang-biao/jiang-biao.github.io/2018/05/03/breadcrumbs-for-websites-design/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="姜形俊">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术分享">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/03/breadcrumbs-for-websites-design/" itemprop="url">win7电脑上的git同时使用多个github账户</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-03T18:12:00+08:00">
+                2018-05-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/转载/" itemprop="url" rel="index">
+                    <span itemprop="name">转载</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/转载/前端设计/" itemprop="url" rel="index">
+                    <span itemprop="name">前端设计</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/05/03/breadcrumbs-for-websites-design/" class="leancloud_visitors" data-flag-title="win7电脑上的git同时使用多个github账户">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs1.jpeg" alt=""><br>面包屑是我们熟知的一种导航工具，它们往往出现在页面内容的上方，告知你所处的位置。它小巧，方便，常见，且简单。可是即便是这样的UI控件，在设计上同样是有讲究的，今天咱们就来聊聊面包屑吧~</p>
+<p>作为一种辅助导航系统，面包屑能够帮助用户清晰的定位到自己所在网站的位置。这个词源自于童话中跟着面包屑回到自己家的孩子，而网页中的面包屑也是帮助用户找到自己位置的UI控件。<br><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs2.jpeg" alt=""></p>
+<p>面包屑通过路径展示告知用户他们所处的位置，而今天的这篇文章将会探讨一个可用的网页面包屑应当如何设计，通过最佳实践展示面包屑的正确用法。</p>
+<h2 id="一、面包屑导航提供可用性"><a href="#一、面包屑导航提供可用性" class="headerlink" title="一、面包屑导航提供可用性"></a>一、面包屑导航提供可用性</h2><p>作为一种视觉指引，面包屑为用户揭示出网页的层次结构，也正是因此，面包屑成为了用户了解网站背景信息的重要途径，帮助用户了解下列问题的答案：</p>
+<blockquote>
+<p>·我在哪里？根据整个网站的层次，面包屑能让用户知道他们所处的位置。<br>·我还能去哪里？面包屑提升了整个网站的可查找性，面包屑的存在揭示了整个网站的结构，用户也随之明白网站还有哪些其他的部分。<br>·是否应当浏览更多？面包屑揭示出网站有更多值得探索的内容，鼓励用户浏览更多。反过来，面包屑的出现降低了网站的跳出率。</p>
+</blockquote>
+<h3 id="1-减少操作次数"><a href="#1-减少操作次数" class="headerlink" title="1.减少操作次数"></a>1.减少操作次数</h3><p>从可用性的角度上来看，面包屑减少了用户跳转到高层级页面的操作数，这样避免了用户使用浏览器的返回按钮和翻找导航寻找上级页面的复杂交互。</p>
+<h3 id="2-占用空间小"><a href="#2-占用空间小" class="headerlink" title="2.占用空间小"></a>2.占用空间小</h3><p>面包屑这种设计元素在页面上占用的空间相当小，它基本都是以带链接的文本的形式存在的，并且通常只有一行。</p>
+<h3 id="3-面包屑不会给用户带来困扰"><a href="#3-面包屑不会给用户带来困扰" class="headerlink" title="3.面包屑不会给用户带来困扰"></a>3.面包屑不会给用户带来困扰</h3><p>这个小小的设计元素占据的空间不大，但是给用户带来的便捷远远大于可能带来的问题和困扰。</p>
+<h2 id="二、什么时候使用面包屑？"><a href="#二、什么时候使用面包屑？" class="headerlink" title="二、什么时候使用面包屑？"></a>二、什么时候使用面包屑？</h2><p>是否要在网站中使用面包屑，主要取决于网站的结构。看看你的网站地图或者整体的结构图，分析使用面包屑能否提高用户在网站内部不同类别、目录下导航是否方便：</p>
+<blockquote>
+<p>·当你的网站内拥有分类明晰、组织明确的多层次线性结构的时候，你应当使用面包屑。比如一个拥有种类繁多产品的电子商务网站，面包屑就相当有用。<br>·当网站不具备逻辑清晰的层次结构的时候，就不要使用面包屑。</p>
+</blockquote>
+<h2 id="三、面包屑的类型"><a href="#三、面包屑的类型" class="headerlink" title="三、面包屑的类型"></a>三、面包屑的类型</h2><p>面包屑是基于网站的逻辑结构而存在的导航组件，它可以基于位置、路径来展示，也可以基于属性而存在。</p>
+<h3 id="1-基于位置的面包屑"><a href="#1-基于位置的面包屑" class="headerlink" title="1.基于位置的面包屑"></a>1.基于位置的面包屑</h3><p>基于位置的面包屑设计通常都能很好的反映网站的结构特征。它们直接将网站的层次结构展现在访客面前，其中包含多个层级（级别通常超过2层）。这种层级展示性的面包屑对于从外部来源（比如搜索引擎）进入网站的用户而言，具有明显的指引性作用。<br><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs3.jpeg" alt=""><br>在下面 BestBuy 的页面中，面包屑将产品所在页面的层级关系展现了出来。<br><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs4.jpeg" alt=""></p>
+<h3 id="2-基于路径的面包屑"><a href="#2-基于路径的面包屑" class="headerlink" title="2.基于路径的面包屑"></a>2.基于路径的面包屑</h3><p>基于路径的面包屑通常也被称为“历史足迹”，它展现出来的并非是网站结构，而是访客抵达特定页面的完整路径。这种面包屑路径并非是静态的，而是动态生成的。基于路径的面包屑有时候会对用户有所帮助，但是有的时候还是会让用户感到迷惑——有的用户浏览网站的时候浏览路径过于天马行空，这种基于路径的面包屑会帮助他们记录，无需翻看历史，也不无需使用浏览器的返回按钮来返回特定位置。另外，这种基于路径的面包屑对于一次就抵达特定位置的用户而言毫无用处。</p>
+<p>下面就是使用基于路径面包屑来导航的案例和原理说明：<br><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs5.jpeg" alt=""></p>
+<h3 id="3-基于属性的面包屑"><a href="#3-基于属性的面包屑" class="headerlink" title="3.基于属性的面包屑"></a>3.基于属性的面包屑</h3><p>这类基于属性的面包屑常见于电子商务类网站，产品常常基于类别和属性而组织到不同的子目录中，基于属性的分类让用户更容易理解产品和产品之间的关系，提供了更多不同的浏览路径。<br><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs6.jpeg" alt=""><br>就像 TM Lewin 的这个页面，面包屑展现出的是特定页面对应产品，而产品是按照某个属性来组织的：<br><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs7.jpeg" alt=""></p>
+<h3 id="4-层级还是历史？"><a href="#4-层级还是历史？" class="headerlink" title="4.层级还是历史？"></a>4.层级还是历史？</h3><p>根据实际经验，绝大多数的情况下，面包屑还是适合展现层级机构而非浏览历史。因此，基于位置和属性的面包屑应用更加广泛，基于路径的面包屑相对少见的多。</p>
+<h2 id="四、面包屑导航最佳实践"><a href="#四、面包屑导航最佳实践" class="headerlink" title="四、面包屑导航最佳实践"></a>四、面包屑导航最佳实践</h2><p>当你开始设计面包屑导航的时候，应当谨记下面的事情：</p>
+<h3 id="1-不要使用面包屑来替代网页主要的导航系统"><a href="#1-不要使用面包屑来替代网页主要的导航系统" class="headerlink" title="1.不要使用面包屑来替代网页主要的导航系统"></a>1.不要使用面包屑来替代网页主要的导航系统</h3><p>面包屑只是一个辅助导航系统，它无法替代主要的导航系统。请记住，它是仅仅是为了用户方便的次要选项，用来抵达其他层级的快速定位链接系统。<br><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs8.jpeg" alt=""></p>
+<h3 id="2-不要将当前页链接加到面包屑中"><a href="#2-不要将当前页链接加到面包屑中" class="headerlink" title="2.不要将当前页链接加到面包屑中"></a>2.不要将当前页链接加到面包屑中</h3><p>面包屑的最后一个层级是当前的页面，而这一项在面包屑中是不应该加上链接的，因为它只起到展示定位的作用，没有任何意义。</p>
+<h3 id="3-使用分隔符"><a href="#3-使用分隔符" class="headerlink" title="3.使用分隔符"></a>3.使用分隔符</h3><p>在面包屑中，用来分隔不同层级最常见的是大于符号(&gt;)，常见的使用方法是“父类别 &gt; 子类别”。当然，分隔符的使用并不拘泥于这一种，有使用箭头（→）的，还有使用书名号（»）的，也有使用斜杠（//）的。使用哪种分隔符通常取决于整体风格和设计师的喜好。<br><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs9.jpeg" alt=""><br><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs10.jpeg" alt=""></p>
+<h3 id="4-选择合适的尺寸和间距"><a href="#4-选择合适的尺寸和间距" class="headerlink" title="4.选择合适的尺寸和间距"></a>4.选择合适的尺寸和间距</h3><p>在设计的时候应当仔细考虑尺寸和间隔大小，不同的面包屑层级之间应当有足够的间距，确保用户能够识别。当然你也不希望面包屑占据页面太多的空间，如果面包屑比顶部导航还要大，看起来就非常尴尬了。</p>
+<h3 id="5-不要让它成为视觉焦点"><a href="#5-不要让它成为视觉焦点" class="headerlink" title="5.不要让它成为视觉焦点"></a>5.不要让它成为视觉焦点</h3><p>面包屑本身是一个辅助导航，如果使用过于花哨的字体和醒目的色彩，会使得它显得喧宾夺主，过于抓人眼球。它不应该是浏览过程中用户的视觉焦点。下面的面包屑设计并不差，但是它太过于醒目，甚至比顶部导航还能引起用户注意力。</p>
+<p><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs11.jpeg" alt=""></p>
+<p>Google 的面包屑设计并不抢眼，但是用户依然能够很好的使用它。</p>
+<p><img src="http://oscuefq9c.bkt.clouddn.com/breadcrumbs12.jpeg" alt=""></p>
+<h3 id="6-不要在移动端页面上使用面包屑"><a href="#6-不要在移动端页面上使用面包屑" class="headerlink" title="6.不要在移动端页面上使用面包屑"></a>6.不要在移动端页面上使用面包屑</h3><p>如果你觉得自己的移动端页面上要使用面包屑的话，那就意味着你的移动端网页设计出现问题了：可能是网站太复杂（嵌套层级过深），而这样一来，就不符合移动端的使用场景了。为了解决问题，你应当试图简化整个体系，确保面包屑不会出现在手机上。</p>
+<h2 id="五、结语"><a href="#五、结语" class="headerlink" title="五、结语"></a>五、结语</h2><p>面包屑让用户可更加便捷地浏览整个网站，回溯到上级页面，寻找相关的产品，它对于整个网站结构是有意义的。它的功能并不复杂，增加易用性是它的主要作用，所以千万不要将面包屑复杂化。</p>
+<p>来源:<a href="https://www.uisdc.com/breadcrumbs-for-websites-design" target="_blank" rel="noopener">指路的面包屑到底应当怎么使用？</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://github.com/jiang-biao/jiang-biao.github.io/2018/04/28/set-buddha-bless/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -690,7 +885,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -701,7 +896,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -712,7 +907,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
